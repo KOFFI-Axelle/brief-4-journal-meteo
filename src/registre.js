@@ -34,13 +34,35 @@ export function trouverParId(releves, id) {
 // (négatif ou décimal accepté) · pluieMm nombre positif ou nul · humiditeAirPct nombre entre 0 et 100.
 // Un message par règle non respectée ; n'ajoutez aucune autre règle. Le journal reçu n'est pas modifié.
 export function verifierReleve(saisie, releves) {
-  throw new Error('TODO : coder verifierReleve dans src/registre.js');
+const erreurs = [];
+const id = String(saisie?.id??'').trim();
+if ( id===''){
+  erreurs.push("L'identifiant est obligatoire.");
+}else if (trouverParId(releves,id.toUpperCase())!== undefined) {
+  erreurs.push("L'identifiant est deja utilisé.");
 }
-
+const date = String (saisie?.date??'').trim();
+if ( date ===''||!estDateValide(date)) {
+  erreurs.push("La date doit etre au format AAAA-MM-JJ et réelle.");
+}
+const temperatureC = versNombre(saisie?.temperatureC);
+if (Number .isNaN(temperatureC)){
+  erreurs.push("La temperature doit etre un nombre.");
+}
+const pluieMm = versNombre(saisie?.pluieMm);
+if(Number.isNaN( pluieMm) || pluieMm <0) {
+erreurs.push("La pluie doit etre un nombre positif ou null")
+}
+const humiditeAirPct = versNombre(saisie?.humiditeAirPct);
+if(Number.isNaN(humiditeAirPct)||humiditeAirPct<0||humiditeAirPct>100){
+  erreurs.push("L'humidite doit etre comprise entre 0 et 100.");
+}
+return erreurs;
+}
 // Fabrique le relevé à enregistrer à partir d'une saisie VALIDE : les trois mesures deviennent des nombres.
 export function creerReleve(saisie) {
   throw new Error('TODO : coder creerReleve dans src/registre.js');
-}
+  }
 
 // Ajoute la saisie au journal si elle est valide (verifierReleve, puis creerReleve).
 // Renvoie les erreurs : [] si le relevé a été ajouté ; sinon les messages, et rien n'est ajouté.
