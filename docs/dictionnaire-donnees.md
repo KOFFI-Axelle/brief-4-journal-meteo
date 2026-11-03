@@ -5,7 +5,7 @@
 | Champ | Signification | Type | Règle de validation | Unité | Exemple |
 | --- | --- | --- | --- | --- | --- |
 | `id` | Identifiant unique | texte | non vide, absent des données | — | ✏️ |
-| ✏️ | | | | | |
+| `date` | | | | | |
 | ✏️ | | | | | |
 | ✏️ | | | | | |
 | ✏️ | | | | | |
