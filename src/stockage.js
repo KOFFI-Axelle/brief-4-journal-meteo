@@ -6,10 +6,11 @@ import { readFile, writeFile } from 'node:fs/promises';
 // Si le fichier n'existe pas ou n'est pas du JSON valide, laissez l'erreur remonter : le menu l'affichera.
 export async function chargerJson(chemin) {
   const texte = await readFile(chemin,'utf8');
-  return JSON (texte);
+  return JSON.parse (texte);
 }
 
 // Écrit le tableau dans le fichier, au format JSON indenté de 2 espaces.
 export async function enregistrerJson(chemin, enregistrements) {
-  const texte= await writeFile(chemin, enregistrements,json.stringify(données, null, 2) ,"utf8");
+  const texte = JSON.stringify(enregistrements, null, 2);
+  return await writeFile(chemin, texte, "utf8");
 }
