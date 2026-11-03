@@ -61,7 +61,13 @@ return erreurs;
 }
 // Fabrique le relevé à enregistrer à partir d'une saisie VALIDE : les trois mesures deviennent des nombres.
 export function creerReleve(saisie) {
-  throw new Error('TODO : coder creerReleve dans src/registre.js');
+  return{
+    id: String(saisie.id).trim().toUpperCase(),
+    date: String(saisie.date).trim(),
+    temperatureC: versNombre(saisie.temperatureC),
+    pluieMm: versNombre(saisie.pluieMm),
+    humiditeAirPct: versNombre(saisie.humiditeAirPct),
+  };
   }
 
 // Ajoute la saisie au journal si elle est valide (verifierReleve, puis creerReleve).
