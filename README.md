@@ -3,6 +3,7 @@
 > Projet individuel du SAS DFS, brief 4 (sujet : [SUJET.md](SUJET.md)). Remplacez chaque ✏️ par votre texte, puis supprimez cette ligne.
 
 ## Contexte
+cet outil sert à un agriculteur ou un technicien de ferme qui veut garder un journal météo simple : temperature , pluie et humidte de l air , jour par jour .il evite de noter les relevés à la main et permet de les retrouver , de les trier et d'en tirer une synthèse.il ne permet pas de conclure sur le climat de la région , car il ne contient que dix relevés fictifs
 
 ✏️ *En trois à cinq phrases : qui utilise l'outil, quel problème il résout, ce qu'il ne permet pas de conclure.*
 
