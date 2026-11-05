@@ -3,7 +3,7 @@
 > Projet individuel du SAS DFS, brief 4 (sujet : [SUJET.md](SUJET.md)). Remplacez chaque ✏️ par votre texte, puis supprimez cette ligne.
 
 ## Contexte
-cet outil sert à un agriculteur ou un technicien de ferme qui veut garder un journal météo simple : temperature , pluie et humidte de l air , jour par jour .il evite de noter les relevés à la main et permet de les retrouver , de les trier et d'en tirer une synthèse.il ne permet pas de conclure sur le climat de la région , car il ne contient que dix relevés fictifs
+Cet outil sert à un agriculteur ou un technicien de ferme qui veut garder un journal météo simple : température , pluie et humidité de l air , jour par jour .Il évite de noter les relevés à la main et permet de les retrouver , de les trier et d'en tirer une synthèse.Il ne permet pas de conclure sur le climat de la région , car il ne contient que dix relevés fictifs
 
 
 ## Prérequis et lancement
@@ -21,9 +21,7 @@ Sous PowerShell, si `npm` est bloqué : `npm.cmd test`.
 
 ## Fonctionnalités
 
-✏️ *Cochez seulement ce qui marche : `- [x]`.*
-
-- [x ] Données lues et enregistrées dans `donnees/releves.json`
+- [x] Données lues et enregistrées dans `donnees/releves.json`
 - [x] Ajouter un relevé, saisies invalides refusées sans arrêter le programme
 - [x] Lister les relevés, message si le journal est vide
 - [x] Rechercher par identifiant ou par date ; journées pluvieuses (au moins 10 mm)
@@ -34,11 +32,14 @@ Sous PowerShell, si `npm` est bloqué : `npm.cmd test`.
 
 ## Données
 
-les 10 releves fictifs de depart sont dans le fichier donnees/releves.json , chaque releve fournit 5 champs :id (Identifiant unique),une date,la temperatureC en °C ,la quantite de pluieMm en mm et le taux humiditeAirPct en % 
+les 10 relevés fictifs de départ sont dans le fichier donnees/releves.json , chaque releve fournit 5 champs :id (Identifiant unique),une date,la temperatureC en °C ,la quantite de pluieMm en mm et le taux humiditeAirPct en % ,docs/dictionnaire-donnees.md
 
 ## Limites
 
-Une température par jour : les températures minimale et maximale calculées sont celles de la série, pas celles de chaque journée. L'humidité relative de l'air n'est pas l'humidité du sol. Dix jours forment une courte série : le climat se caractérise sur une longue période, en général 30 ans (les normales climatiques). Le seuil de 10 mm est une catégorie d'exercice : il ne prévoit ni inondation ni stress hydrique.
+ .Une température par jour : les températures minimale et maximale calculées sont celles de la série, pas celles de chaque .journée.
+ .L'humidité relative de l'air n'est pas l'humidité du sol. 
+ .Dix jours forment une courte série : le climat se caractérise sur une longue période, en général 30 ans (les normales climatiques). 
+ .Le seuil de 10 mm est une catégorie d'exercice : il ne prévoit ni inondation ni stress hydrique.
 
 ## Documents
 
