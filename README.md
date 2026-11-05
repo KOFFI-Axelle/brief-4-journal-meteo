@@ -5,7 +5,6 @@
 ## Contexte
 cet outil sert à un agriculteur ou un technicien de ferme qui veut garder un journal météo simple : temperature , pluie et humidte de l air , jour par jour .il evite de noter les relevés à la main et permet de les retrouver , de les trier et d'en tirer une synthèse.il ne permet pas de conclure sur le climat de la région , car il ne contient que dix relevés fictifs
 
-✏️ *En trois à cinq phrases : qui utilise l'outil, quel problème il résout, ce qu'il ne permet pas de conclure.*
 
 ## Prérequis et lancement
 
@@ -24,22 +23,22 @@ Sous PowerShell, si `npm` est bloqué : `npm.cmd test`.
 
 ✏️ *Cochez seulement ce qui marche : `- [x]`.*
 
-- [ ] Données lues et enregistrées dans `donnees/releves.json`
-- [ ] Ajouter un relevé, saisies invalides refusées sans arrêter le programme
-- [ ] Lister les relevés, message si le journal est vide
-- [ ] Rechercher par identifiant ou par date ; journées pluvieuses (au moins 10 mm)
-- [ ] Trier par température ou par pluie
-- [ ] Synthèse : température moyenne, minimale et maximale de la série, cumul de pluie, journées pluvieuses
-- [ ] Bonus : supprimer et modifier un relevé (choix 6 et 7)
-- [ ] Bonus : tri par température décroissante, journée la plus chaude
+- [x ] Données lues et enregistrées dans `donnees/releves.json`
+- [x] Ajouter un relevé, saisies invalides refusées sans arrêter le programme
+- [x] Lister les relevés, message si le journal est vide
+- [x] Rechercher par identifiant ou par date ; journées pluvieuses (au moins 10 mm)
+- [x] Trier par température ou par pluie
+- [x] Synthèse : température moyenne, minimale et maximale de la série, cumul de pluie, journées pluvieuses
+- [x] Bonus : supprimer et modifier un relevé (choix 6 et 7)
+- [x] Bonus : tri par température décroissante, journée la plus chaude
 
 ## Données
 
-✏️ *Le fichier, le nombre de relevés, les champs (voir [docs/dictionnaire-donnees.md](docs/dictionnaire-donnees.md)), les unités. Rappelez qu'ils sont fictifs.*
+les 10 releves fictifs de depart sont dans le fichier donnees/releves.json , chaque releve fournit 5 champs :id (Identifiant unique),une date,la temperatureC en °C ,la quantite de pluieMm en mm et le taux humiditeAirPct en % 
 
 ## Limites
 
-✏️ *Au moins trois. Par exemple : dix jours de relevés forment une courte série, ils ne décrivent pas le climat de la région.*
+Une température par jour : les températures minimale et maximale calculées sont celles de la série, pas celles de chaque journée. L'humidité relative de l'air n'est pas l'humidité du sol. Dix jours forment une courte série : le climat se caractérise sur une longue période, en général 30 ans (les normales climatiques). Le seuil de 10 mm est une catégorie d'exercice : il ne prévoit ni inondation ni stress hydrique.
 
 ## Documents
 
@@ -47,4 +46,4 @@ Sous PowerShell, si `npm` est bloqué : `npm.cmd test`.
 
 ## Auteur
 
-✏️ *Prénom NOM, compte GitHub. Entraide : avec qui, sur quoi.*
+*Amenan Marie Axelle,KOFFI. https://github.com/KOFFI-Axelle/brief-4-journal-meteo. KANGA jules Christ au niveau des données README   *
