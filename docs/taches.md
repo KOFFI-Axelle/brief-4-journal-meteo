@@ -14,4 +14,4 @@
 | Dépôt cloné et lancé ailleurs ; démonstration répétée | | | |
 | Bonus |2026-11-03|2026-11-04 |npm run test:bonus , 8 vert| 
 
-**Blocages** (le message exact, ce que j'ai essayé, la solution) : ✏️
+**Blocages** (le message exact, ce que j'ai essayé, la solution) : 

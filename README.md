@@ -1,6 +1,6 @@
 # Journal météorologique de la ferme
 
-> Projet individuel du SAS DFS, brief 4 (sujet : [SUJET.md](SUJET.md)). Remplacez chaque ✏️ par votre texte, puis supprimez cette ligne.
+> Projet individuel du SAS DFS, brief 4 (sujet : [SUJET.md](SUJET.md)). Remplacez chaque  par votre texte, puis supprimez cette ligne.
 
 ## Contexte
 Cet outil sert à un agriculteur ou un technicien de ferme qui veut garder un journal météo simple : température , pluie et humidité de l air , jour par jour .Il évite de noter les relevés à la main et permet de les retrouver , de les trier et d'en tirer une synthèse.Il ne permet pas de conclure sur le climat de la région , car il ne contient que dix relevés fictifs
